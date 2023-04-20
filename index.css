@@ -42,125 +42,119 @@ table {
 	border-spacing: 0;
 }
 
-@import url(https://fonts.google.com/specimen/Chelsea+Market);
-@import url(https://fonts.google.com/specimen/Roboto+Mono);
-
-*{
+/* Global Style */
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    max-width: 100%;
     text-decoration: none;
-    font-size: .625%;
 }
 
-nav {
-    border: 1px solid red;
-    width: 75%;
-    padding: 50px;
-    margin: 0 auto;
+/* General Styles */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
     font-family: 'Roboto Mono', monospace;
-    text-align: center;
-    font-size: 1rem;
-}
-
-nav a {
-    border-radius: 10px;
-    padding: 20px;
-    color: white;
-    margin-top: 20px;
-}
-
-.plan {
-    border: 1px solid #FF764E;
-    background-color: #FF764E;
-}
-
-.learn {
-    border: 1px solid #5ED3EB;
-    background-color: #5ED3EB;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.involved {
-    border: 1px solid #FFCD69;
-    background-color: #FFCD69;
 }
 
 h1 {
-    border: 1px solid red;
-    width: 700px;
-    text-align: center;
-    margin: 0 500px;
-    margin-bottom: 20px;
     font-family: 'Chelsea Market', serif;
-    font-size: 4rem;
+    font-size: 6rem;
 }
 
-p {
-    font-family: 'Roboto Mono', monospace;
-}
-
-.park {
-    width: 95%;
-    text-align: center;
+section {
+    padding: 4% 0;
+    width: 90%;
     margin: 0 auto;
 }
 
-.park p {
+/* Header Section Styles */
+nav {
+    padding: 2% 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1% 0;
+    width: 10%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.orange {
+    background-color: #FF764E;
+    margin-left: 10%;
+}
+
+.blue {
+    background-color: #5ED3EB;
+    margin: 0 24%;
+}
+
+.yellow {
+    background-color: #FFCD69;
+    margin-right: 10%;
+}
+
+/* Title Section */
+
+.cta {
+    position: relative;
+}
+
+.text, .image {
+    display: inline-block;
+}
+
+.image {
+    width: 30%;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.text {
+    width: 55%;
+    margin-left: 5%;
+    text-align: center;
+    line-height: 2;
+    position: absolute;
+    top: 110px;
+}
+
+/* Main Styles */
+.main {
     background-color: #DDB9A3;
     color: white;
-    padding: 10px;
+    padding: 2%;
 }
 
-.valley p {
-    border: 1px solid red;
-    width: 700px;
+.info div {
+    width: 30%;
+    margin: 5% auto;
     text-align: center;
-    margin: 0 500px;
-}
-.valley {
-    border: 1px solid red;
-    width: 200px;
-    height: 200px;
-    border-radius: 99999px;
-    margin: 20px 150px;
-    padding: 20px;
 }
 
-.fire {
-    text-align: center;
-    margin: 0 auto;
-    width: 19%; 
-}
-
-.reserve {
-    text-align: center;
-    margin: 50px auto;
-    width: 21%; 
-}
-
-.fire img {
-    padding: 20px;
-}
-
-.reserve img {
-    padding: 20px;
-}
-
-.fire a {
+.info a {
     font-weight: bold;
     color: black;
 }
 
-.reserve a {
-    font-weight: bold;
-    color: black;
-}
-
-.footer_image {
-    border: 1px solid red;
-    text-align: center;
-}
-
-footer nav {
-    background-color: #F9E7DC;
+.bg-image {
+    background-image: url('assets/footer_img.jpg');
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-size: cover;
+    background-position: top center;
     width: 100%;
+}
+
+footer {
+    background-color: #F9E7DC;
 }
